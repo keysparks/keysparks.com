@@ -42,6 +42,19 @@
     color: #3194db; 
 }
 
+/*--------------------------------------------------------------
+# Hero
+--------------------------------------------------------------*/
+#hero h4{
+  font-size: 26px;
+  color: #124265;
+}
+
+#hero h5{
+  font-size: 20px;
+  color: #124265;
+}
+
 #hero h3 {
   margin: 0;
   font-size: 30px;
@@ -50,6 +63,8 @@
   color: #124265;
   font-family: "Poppins", sans-serif;
 }
+
+
 /*--------------------------------------------------------------
 # About
 --------------------------------------------------------------*/
@@ -239,12 +254,13 @@
 /*--------------------------------------------------------------
 # modal pop
 --------------------------------------------------------------*/
-@media(min-width: 768px){  
+@media(min-width: 800px){  
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    z-index: 998; /* Sit on top */
     padding-top: 10%; /* Location of the box */
+    
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -258,12 +274,13 @@
 
   }
 }
-@media(max-width: 768px){
+
+@media(min-width: 500px){  
   .modal {
     display: none; /* Hidden by default */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 20%; /* Location of the box */
+    z-index: 998; /* Sit on top */
+    padding-top: 5%; /* Location of the box */
     left: 0;
     top: 0;
     width: 100%; /* Full width */
@@ -276,15 +293,19 @@
     align-content: center;
 
   }
+
+  
+
 }
+
 
 /* Modal Content */
 .modal-content {
   background-color: #fefefe;
-  margin: auto;
+  /* margin: 10px; */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 100%;
 }
 
 /* The Close Button */
@@ -372,6 +393,12 @@
   font-size: 16px;
   /* color: #124265; */
   padding-bottom: 12px;
+}
+
+.footer-contact h6{
+  /* font-size: 16px; */
+  /* padding-bottom: 12px; */
+  color: #777777;
 }
 
 #footer .footer-top .footer-links ul .service-list{
